@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif
+}
+
+a {
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.ads:hover {
+    opacity: 80%;
+}
+
+.secundarybody {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.secundarybody h2 {
+    font-size: 40px;
+}
+
+.secundarybody h3 {
+    font-size: 20px;
+}
+
+
+.staymenu {
+    display: block;
+    text-align: center;
+}
+
+.staymenu p {
+    font-size: 40px;
+    font: 'Dela Gothic One';
+}
+
+
+.menu {
+   margin: auto;
+   display: flex;
+   text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+}
