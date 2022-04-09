@@ -336,7 +336,9 @@ body.dark .home .text{
     <section class="home">
         <div class="text">Dashboard Sidebar</div>
     </section>
-
+<script>
+       window.location="http://127.0.0.1:5500/mantenimiento.html"
+    </script>
     <script>
         const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
@@ -344,30 +346,9 @@ body.dark .home .text{
       searchBtn = body.querySelector(".search-box"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
 });
     </script>
-    <script>
-    windows.location.replace('https://santiagofontanaa.github.io/revivemeleague/mantenimiento.html')
-    </script>
+    
 </body>
 </html>
 
