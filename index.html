@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
-    <title>CafeNyanBot | Home</title>
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <link rel="shortcut icon" href="img/LogoEntero.jpeg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="main.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
-  
-  <div class="container">
-    <div>
-     
-
-
 <body>
-     <section id="seccion-1">
-      <div style="padding: 63px; background-image: url(img/BackgroundLogo.jpeg);">
-         <a style="color: white;" href="#seccion-2">INICIO</a>
-         <a style="color: white;" href="#seccion-3">COMANDOS</a>
-         <h1 style="color: white; margin-top: 4px;">¿QUE ESPERAS PARA AGREGAR CAFEINA A TU SERVIDOR?</h1>
-         <button class="ads" style="font-size: 25px; margin-top: 20px; border-radius: 6px; color: white; background-color: #628DF9 ; border-bottom: none; border: 10px #628DF9 solid; " onclick="location.href='https://discord.com/oauth2/authorize?client_id=826907161825247253&permissions=8&scope=bot'">AÑADIR A DISCORD</button><br>
-         <button class="ads" style="font-size: 25px; margin-top: 10px; border-radius: 6px; color: white; background-color: #2E363D; border-bottom: none; border: 10px #2E363D solid; " onclick="location.href='https://discord.com/invite/mQD9RFA5hr'">BOT SUPPORT</button>    
-         <p style="color: white; margin-top: 15px;"><b>ACLARACION</b>: Debes ser <b>administrador</b> del servidor que quieras agregar a CafeNyan</p>
-      
-      </div>
-     </section> 
-      <hr>
-     <section id="seccion-2">
-      <div style="padding: 40px;">
-        <h2 style="font-size: 40px; color: #111820;">DIVERSION</h2>
-        <p>CafeNyan cuenta con comandos de diversión para utilizar solo o con amigos</p>
-        <img width="250px" src="img/diversion.png">
-      </div>
-      <div style="padding: 40px;">
-        <h2 style="font-size: 36px; color: #111820;">EXPRESIONES</h2>
-        <p>¡Expresa tus sentimientos!, CafeNyan te da la posibilidad para que expreses tus sentimientos utilizando comandos </p>
-        <img width="247px" src="img/expresiones.png">
-      </div>
-      <div style="padding: 40px;">
-        <h2 style="font-size: 34px; color: #111820;">MODERACION</h2>
-        <p>CafeNyan tiene comandos para hacer el servidor mas seguro del condado</p>
-        <img width="250px" src="img/moderacion.png">
-      </div>
-     </section>
-     <hr>  
-      <section id="seccion-3"> 
-        <div style="padding: 40px;">
-          <h2 style="font-size: 40px; color: #111820;">COMANDOS CAFEYNYAN</h2>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                   <img src="/img/dc784706-85e5-4b3c-968f-031a466b0d75-profile_image-70x70.png" alt="" srcset="">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Revive Me!</span>
+                </div>
+            </div>
 
-          <p style="margin-top: 20px; font-size: 30px;">EXPRESIONES</p>
-            |<p><b>cn!angry</b> Expresa que estas enjoado | <br><b>cn!confused</b> | ¿que?<br><b>cn!cook</b> | ¡Hora de cocinar!<br><b>cn!sad</b> |  ¿estas triste?, este comando expresa ese sentimiento<br><b>cn!dance</b> | Un bailesito nunca viene mal<br><b>cn!eat</b> | Comer es mi pasion<br><b>cn!happy</b> | La felicidad siempre fluye<br><b>cn!scared</b> | estoy muy asustado.</p>
-          <p style="margin-top: 20px; font-size: 30px;">DIVERSION</p>
-          <p><b>cn!randomanime</b> | ¿No sabes que anime ver?, este comando te recomienda un anime aleatorio y encima, te da la informacion del mismo<br><b>cn!meme</b> | Este comando te muestra un meme aleatorio de reddit<br><b>cn!rps</b> | Juega con CafeNyan un piedra, papel o tijerasw<br><b>cn!cafeina</b> | Con este comando mediras tu nivel de cafeina en el cuerpo<br><b>cn!kill</b> | ¿Te cansaste de un usuario molesto? Asesinalo con este maravilloso comando (no replicar en la vida real :P)<br><b>cn!kiss</b> | Besa a esa personita que quieres con este hermoso comando<br><b>cn!hug</b> | Abraza a esta persona querida con este comando<br><b>cn!dancewith</b> | ¿Para que bailar solo? con este comando podras bailar con algun usuaruio del server</p>
-          <p style="margin-top: 20px; font-size: 30px;">MODERACION</p>
-          <p><b>cn!serverinfo</b> | Mira la informacion del server donde se escriba este comando<br><b>cn!userinfo</b> | Se curioso y mira la informacion del usuario mencionado  <br><b>cn!avatar</b> | Muestra el avatar del usuario mencionado<br><b>cn!kick</b> | Este comando elimina a un jugador elegido<br><b>cn!ban</b> | Este comando banea a un jugador elegido<br><b>cn!ping</b> | Este comando hace un ping a todo el servidor<br><b>cn!clear</b> | Este comando purga desde 1 a 100 mensajes de una sala especifica<br><b>cn!mute</b> | Mutea al Usuario que elijas por falta de Cafeina<br><b>cn!unmute</b> | Desmutea al Usuario que elijas por exceso de Cafeina</p>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
 
-            
-          </div>
-      </section>
-    </div>     
-  </div> 
-  <footer style="background-color: #373737;">
-   <div style="padding: 13px; color: white;">
-     <p style="font-size: 20px;">Derechos Reservados CafeNyan 2021</p>
-     <a style="color: white;" href="https://discord.com/invite/mQD9RFA5hr">DISCORD SUPPORT</a>
-     <a style="color: white;" href="https://discord.com/oauth2/authorize?client_id=826907161825247253&permissions=8&scope=bot">AÑADIR A DISCORD</a>
-   </div> 
-  </div>
+        <div class="menu-bar">
+            <div class="menu">
 
-         
-</body> 
+
+                <ul class="menu-links">
+                    
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-trophy icon'></i>
+                            <span class="text nav-text">Partidos</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+                <div class="bottom-content">
+                <li class="mode">
+                    <p>RVL</p>
+                </li>
+                
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
 </html>
+
